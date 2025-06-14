@@ -7,7 +7,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 export default async function handler(req, res) {
   const  allowedOrigin = "https://hyeonjirhee.github.io"
 
-  res.setHeader("Access-Control-Aloow-Origin", allowedOrigin);
+  res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
